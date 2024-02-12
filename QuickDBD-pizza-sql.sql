@@ -6,7 +6,7 @@
 CREATE TABLE "orders" (
     "row_id" int   NOT NULL,
     "order_id" varchar(10)   NOT NULL,
-    "created_at" datetime   NOT NULL,
+    "created_at" timestamp   NOT NULL,
     "item_id" varchar(10)   NOT NULL,
     "quantity" int   NOT NULL,
     "cust_id" int   NOT NULL,
@@ -100,7 +100,7 @@ CREATE TABLE "shift" (
 CREATE TABLE "rota" (
     "row_id" int   NOT NULL,
     "rota_id" varchar(20)   NOT NULL,
-    "date" datetime   NOT NULL,
+    "date" timestamp   NOT NULL,
     "shift_id" varchar(20)   NOT NULL,
     "staff_id" varchar(20)   NOT NULL,
     CONSTRAINT "pk_rota" PRIMARY KEY (
